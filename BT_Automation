@@ -38,7 +38,8 @@ view_sim_deals_button = driver.find_element(By.XPATH, "//a[contains(text(), 'Vie
 view_sim_deals_button.click()
 
 #Validate the title for the new page
-new_page_title = driver.title print(f"Title of the new page: {new_page_title}")
+new_page_title = driver.title 
+print(f"Title of the new page: {new_page_title}")
 
 #Validate "30% off and double data" on the 125GB 250GB Essential Plan
 offer_text = "30% off and double data" 
