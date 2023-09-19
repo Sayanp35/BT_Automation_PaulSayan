@@ -41,9 +41,9 @@ new_page_title = driver.title print(f"Title of the new page: {new_page_title}")
 offer_text = "30% off and double data" plan_text = "125GB 250GB Essential Plan" original_price_text = "was £27" discounted_price_text = "£18.90 per month"
 
 if offer_text in driver.page_source and plan_text in driver.page_source and original_price_text in driver.page_source and discounted_price_text in driver.page_source: 
-	print("Validation successful.") 
-else: 
-	print("Validation failed.")
+	print(f"Test Passed: Plan information is correct.")
+else:
+    print(f"Test Failed: Plan information is incorrect.")
 
 #Close the browser and exit
 driver.quit()
